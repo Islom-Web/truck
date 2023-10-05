@@ -1,0 +1,55 @@
+.stuff {
+  margin-top: 130px;
+  &__wrapper {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(2, 605px);
+    grid-template-rows: repeat(3, 210px);
+    row-gap: 24px;
+    column-gap: 30px;
+  }
+  &__item {
+    border-radius: 10px;
+    border-left: 51px inset #2cbfab;
+    background: var(--white, #fff);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    img {
+      margin-left: 32px;
+      width: 138px;
+      height: 138px;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &-pos {
+        position: relative;
+        @include before_line;
+        &::before {
+          top: 32px;
+          width: 86px;
+        }
+      }
+      &-social {
+        margin-top: 36px;
+        display: flex;
+        gap: 20px;
+        i {
+          color: #bfbfc7;
+          width: 20px;
+          height: 20px;
+          transition: 0.3s ease-in-out 0s;
+          cursor: pointer;
+          &:hover {
+            color: #000;
+            transform: scale(1.3);
+          }
+        }
+      }
+    }
+  }
+}

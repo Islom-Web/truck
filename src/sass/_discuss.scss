@@ -1,0 +1,48 @@
+.discuss {
+  box-sizing: border-box;
+  margin-top: 130px;
+  &__wrapper {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      align-items: center;
+    }
+  }
+  &__right {
+    width: 794px;
+    height: 383px;
+    border-radius: 5px;
+    background-color: #f9f9fb;
+    padding: 40px 72px 24px 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 56px;
+      text-align: left;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e9eaf2;
+      &:last-child {
+        border: none;
+      }
+      &-info {
+        color: #363738;
+        font-weight: 600;
+        width: 443px;
+      }
+    }
+  }
+}

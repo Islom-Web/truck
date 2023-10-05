@@ -1,0 +1,126 @@
+.clients {
+  margin-top: 120px;
+  .container {
+    position: relative;
+    &::before {
+      content: "Привлеченные клиенты";
+      position: absolute;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+      top: 95px;
+      left: 67px;
+      color: #fff;
+    }
+  }
+  &__bg {
+    background: url("../img/clients.png") no-repeat;
+    width: 1240px;
+    height: 917px;
+    margin: 0 auto;
+  }
+  &__paper {
+    position: absolute;
+    top: 85px;
+    padding: 28px 32px 0px;
+    right: 67px;
+    width: 588px;
+    height: 699px;
+    border-radius: 8px;
+    background: #fff;
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 8px;
+      p {
+        width: 274px;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+    hr {
+      opacity: 0.4;
+      margin: 32px 0;
+    }
+    table {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-collapse: collapse;
+      width: 588px;
+      height: 508px;
+      border: 1px solid #bdc3c7;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2),
+        -1px -1px 8px rgba(0, 0, 0, 0.2);
+      background-color: #f9f9fb;
+      margin-top: 32px;
+    }
+
+    #main-p {
+      display: none;
+    }
+    tr {
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    td p {
+      text-align: left;
+      color: #6b6b6c;
+      font-family: PT Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 135%;
+      margin: 5px 0 5px;
+    }
+
+    td h4 {
+      text-align: left;
+      color: #363738;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 135%;
+      margin: 5px 0 5px;
+    }
+    td span {
+      color: #363738;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 135%;
+      margin: 5px 0 5px;
+    }
+
+    #header {
+      background-color: $main-color;
+      color: #fff;
+    }
+
+    h1 {
+      font-weight: 600;
+      text-align: center;
+      background-color: $main-color;
+      color: #fff;
+      padding: 10px 0px;
+    }
+    @media only screen and (max-width: 768px) {
+      table {
+        width: 90%;
+      }
+    }
+  }
+}

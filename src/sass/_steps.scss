@@ -1,0 +1,51 @@
+.steps {
+  margin-top: 120px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  &-title {
+    margin-bottom: 50px;
+  }
+  &__item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 56px;
+    grid-template-columns: 331px 570px;
+    fill: var(--white, #fff);
+    width: 1183px;
+    height: 245px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    position: relative;
+    @include circle;
+    &-2 {
+      &::before {
+        content: "2";
+      }
+    }
+    &-3 {
+      &::before {
+        content: "3";
+      }
+    }
+    &-text {
+      display: flex;
+      height: 181px;
+      flex-direction: column;
+      justify-content: space-between;
+      &-title {
+        position: relative;
+        @include before_line;
+        &::before {
+          width: 86px;
+          top: 48px;
+        }
+      }
+    }
+  }
+}

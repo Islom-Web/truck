@@ -1,0 +1,49 @@
+.promo {
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  &__wrapper {
+    padding-top: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+    background: url("../img/truck.png") no-repeat;
+    border-radius: 10px;
+    width: 635px;
+    height: 505px;
+    z-index: 2;
+  }
+  &__info {
+    width: 470px;
+  }
+  &-title {
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  &-subtitle {
+    font-style: normal;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  &-text {
+    position: relative;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #363738;
+    text-decoration: none;
+    @include before_line;
+  }
+  &__bg {
+    width: 42%;
+    height: 787px;
+    background-color: $main-color;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}

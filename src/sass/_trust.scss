@@ -1,0 +1,27 @@
+.trust {
+  margin-top: 120px;
+  &__wrapper {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 183px);
+    row-gap: 72px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #d7d7dd;
+    &:nth-child(4),
+    &:nth-child(8) {
+      border-right: none;
+    }
+    &-title {
+      margin-top: 20px;
+    }
+    &-subtitle {
+      margin-top: 10px;
+    }
+  }
+}

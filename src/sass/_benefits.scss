@@ -1,0 +1,40 @@
+.benefits {
+  margin-top: 100px;
+  &__img {
+    background: url("../img/benefitTruck.png") no-repeat;
+    width: 1341px;
+    height: 454px;
+    position: relative;
+    &::before {
+      content: "Почему с нами выгоднее?";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 40px;
+      width: 350px;
+      z-index: 5;
+      color: #fff;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 64px;
+    margin-top: 73px;
+  }
+  &__item {
+    margin-left: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Roboto:wght@300;400;900&display=swap");
+
+@import "./base/variables.scss";
+@import "base/mixins";
+
+* {
+  font-family: "Exo 2", "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: $main-color;
+}
+
+@import "title";
+@import "promo";
+@import "handle";
+@import "survey";
+@import "benefits";
+@import "works";
+@import "clients";
+@import "steps";
+@import "trust";
+@import "stuff";
+@import "discuss";
+@import "contact";
+@import "data";
+@import "video";
+@import "media";
+
+// methodPost action=#
+
+// <div class=file_upload>
+// <button type=button>Загрузить фотографию</button>
+// <div>Файл не выбран</div>
+// <input type=file name=upload>
+// </div>
+
+// upload.forEach((item) => {
+//   item.addEventListener("input", () => {
+//     console.log(item.files[0]);
+//     let dots;
+//     item.files[0].name.split(".")[0].length > 5
+//       ? (dots = "...")
+//       : (dots = ".");
+//     const name =
+//       item.files[0].name.split(".")[0].substring(0, 6) +
+//       dots +
+//       item.files[0].name.split(".")[1];
+//     item.previousElementSibling.textContent = name;
+//   });
+// });

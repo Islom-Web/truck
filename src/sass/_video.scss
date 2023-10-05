@@ -1,0 +1,8 @@
+.video {
+  margin-top: 123px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
