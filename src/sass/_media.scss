@@ -191,9 +191,14 @@
       flex-direction: column;
       align-items: baseline;
       justify-content: center;
-      img {
-        width: 100px;
-        height: 100px;
+      &-img {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      &-info {
+        margin-left: 32px;
       }
     }
   }
@@ -209,6 +214,12 @@
       height: 369px;
       &-item {
         gap: 0px;
+        &-name {
+          font-size: 15px;
+        }
+        &-info {
+          font-size: 15px;
+        }
       }
     }
   }
@@ -433,6 +444,9 @@
       justify-content: flex-start;
       align-items: center;
       border-left: 30px inset #2cbfab;
+      &-info {
+        margin-left: 0;
+      }
     }
   }
   .discuss {
